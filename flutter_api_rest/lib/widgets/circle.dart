@@ -14,6 +14,7 @@ class Circle extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         color: Colors.orange,
+        shape: BoxShape.circle,
       ),
     );
   }
