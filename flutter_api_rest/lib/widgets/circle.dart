@@ -10,7 +10,11 @@ class Circle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: child,
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        color: Colors.orange,
+      ),
     );
   }
 }
