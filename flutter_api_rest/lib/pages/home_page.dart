@@ -9,6 +9,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    final double pinkSize = size.width * 0.8;
+    final double orangeSize = size.width * 0.57;
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -17,13 +20,27 @@ class _HomePageState extends State<HomePage> {
         child: Stack(
           children: <Widget>[
             Positioned(
-              left: -50,
-              top: -100,
-              child: Circle(size: 240, colors: [
-                Colors.orange,
-                Colors.deepOrangeAccent,
-                
-              ],),)
+              top: -pinkSize * 0.4,
+              right: -pinkSize * 0.2,
+              child: Circle(
+                size: pinkSize,
+                colors: [
+                  Colors.pinkAccent,
+                  Colors.pink,
+                ],
+              ),
+            ),
+            Positioned(
+              top: -orangeSize * 0.55,
+              left: -orangeSize * 0.15,
+              child: Circle(
+                size: orangeSize,
+                colors: [
+                  Colors.orange,
+                  Colors.deepOrangeAccent,
+                ],
+              ),
+            ),
           ],
         ),
       ),
