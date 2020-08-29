@@ -19,7 +19,11 @@ class _HomePageState extends State<HomePage> {
             Positioned(
               left: -50,
               top: -100,
-              child: Circle(size: 240),)
+              child: Circle(size: 240, colors: [
+                Colors.orange,
+                Colors.deepOrangeAccent,
+                
+              ],),)
           ],
         ),
       ),

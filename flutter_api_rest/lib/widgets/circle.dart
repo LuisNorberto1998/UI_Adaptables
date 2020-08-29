@@ -17,7 +17,11 @@ class Circle extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.orange,
         shape: BoxShape.circle,
-        gradient: LinearGradient(colors: this.colors),
+        gradient: LinearGradient(
+          colors: this.colors,
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter
+        ),
       ),
     );
   }
