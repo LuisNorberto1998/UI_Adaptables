@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_rest/widgets/circle.dart';
+import 'package:flutter_api_rest/widgets/icon_container.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -41,6 +42,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            IconContainer(),
           ],
         ),
       ),
