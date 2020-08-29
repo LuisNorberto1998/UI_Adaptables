@@ -7,10 +7,22 @@ class IconContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 140,
-      height: 140,
+      width: 110,
+      height: 110,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20.0),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(color: Colors.black26, blurRadius: 10.0),
+        ],
+      ),
+      padding: EdgeInsets.all(20),
       child: Center(
-        child: SvgPicture.asset('assets/icon.svg'),
+        child: SvgPicture.asset(
+          'assets/icon.svg',
+          width: 80,
+          height: 80,
+        ),
       ),
     );
   }

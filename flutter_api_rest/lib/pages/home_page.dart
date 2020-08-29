@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         color: Colors.white,
         child: Stack(
+          alignment: Alignment.center,
           children: <Widget>[
             Positioned(
               top: -pinkSize * 0.4,
@@ -42,7 +43,10 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            IconContainer(),
+            Positioned(
+              top: 130,
+              child: IconContainer(),
+            ),
           ],
         ),
       ),
