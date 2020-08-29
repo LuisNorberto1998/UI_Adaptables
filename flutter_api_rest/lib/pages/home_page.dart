@@ -16,7 +16,10 @@ class _HomePageState extends State<HomePage> {
         color: Colors.white,
         child: Stack(
           children: <Widget>[
-            Circle(size: 200),
+            Positioned(
+              left: -50,
+              top: -100,
+              child: Circle(size: 240),)
           ],
         ),
       ),
